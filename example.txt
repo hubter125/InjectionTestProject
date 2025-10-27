@@ -1,0 +1,16 @@
+[2025-10-26 21:01:23] INFO  User login successful: user=admin, ip=192.168.0.14
+[2025-10-26 21:02:01] INFO  Request received: /index.php?id=12
+[2025-10-26 21:02:33] WARN  Unexpected parameter: /login.php?user=guest
+[2025-10-26 21:03:10] INFO  Database query executed: SELECT * FROM users WHERE id='42'
+[2025-10-26 21:03:45] ERROR Suspicious query detected: SELECT * FROM users WHERE username='admin' AND password='1'='1'
+[2025-10-26 21:04:02] INFO  File uploaded successfully: /uploads/avatar.png
+[2025-10-26 21:05:17] INFO  GET /api/data?query=active_users
+[2025-10-26 21:05:55] WARN  Failed login attempt: username='root' AND password='1'='1'
+[2025-10-26 21:06:22] INFO  Connection closed by client 10.0.0.55
+[2025-10-26 21:06:59] INFO  User logout: user=admin
+[2025-10-26 21:07:45] ERROR SQL exception: syntax error near '1'='1'
+[2025-10-26 21:08:12] INFO  Backup completed successfully.
+[2025-10-26 21:08:54] WARN  Input validation failed on field 'email'
+[2025-10-26 21:09:30] INFO  Cron job executed: cleanup_sessions
+[2025-10-26 21:10:11] ERROR Unauthorized access attempt: ' OR '1'='1
+[2025-10-26 21:10:45] INFO  Session timeout: user=guest
