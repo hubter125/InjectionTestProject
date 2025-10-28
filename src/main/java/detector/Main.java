@@ -3,15 +3,16 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 // Reads a File line by line and passes each line through all detectors
-public class ingestor {
+public class Main {
     public static void main(String[] args) {
         // TODO: make file specification easier
         String fileName = (args.length > 0) ? args[0] : "example.txt";
         // Storing detectors in Array
-        Detector[] detectors = {
-            new sqlDetector("SQL"),
-            new xssDetector("XSS")
-        };
+        sqlDetector sql = new sqlDetector("SQL");
+        xssDetector xss = new xssDetector("XSS");
+        xss.readList("src/main/signatures/xss_signatures.txt");
+        sql.readList("src/main/signatures/sql_signatures.txt");
+        Detector[] detectors = {sql,xss};
         int lineNo = 0;
 
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {

@@ -1,3 +1,4 @@
+# Fake log data
 [2025-10-26 21:01:23] INFO  User login successful: user=admin, ip=192.168.0.14
 [2025-10-26 21:02:01] INFO  Request received: /index.php?id=12
 [2025-10-26 21:02:33] WARN  Unexpected parameter: /login.php?user=guest
@@ -14,3 +15,10 @@
 [2025-10-26 21:09:30] INFO  Cron job executed: cleanup_sessions
 [2025-10-26 21:10:11] ERROR Unauthorized access attempt: ' OR '1'='1
 [2025-10-26 21:10:45] INFO  Session timeout: user=guest
+javascript:
+vbscript:
+data:text/html
+data:text/javascript
+document.cookie
+window.location
+location.href

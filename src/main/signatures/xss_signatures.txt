@@ -1,0 +1,76 @@
+# XSS signatures 
+# Simple tags / elements
+<script>
+</script>
+<iframe
+</iframe>
+<img src
+<object
+<embed
+<applet
+<body onload
+<form action="javascript:
+<input type="image
+
+# Event handlers 
+onerror=
+onload=
+onmouseover=
+onfocus=
+onmouseenter=
+onmouseleave=
+onmouseleave=
+onclick=
+onsubmit=
+onkeydown=
+onkeypress=
+onkeyup=
+
+# JavaScript protocol / functions / common payload markers
+javascript:
+vbscript:
+data:text/html
+data:text/javascript
+document.cookie
+window.location
+location.href
+location=
+innerHTML
+outerHTML
+insertAdjacentHTML
+eval(
+setTimeout(
+setInterval(
+alert(
+confirm(
+prompt(
+new Image(
+createElement("script")
+appendChild(
+replace(  
+
+# Encoded / escaped forms (HTML entity & URL-encoded)
+%3cscript%3e
+%3Cscript%3E
+&#x3c;script
+&#60;script
+
+# CSS/expression / style-based attacks
+style="expression(
+style=
+background:url(javascript:
+
+# HTML attributes often abused
+srcdoc=
+src=
+sandbox=   # iframe sandbox manipulations
+allow-scripts
+allow-same-origin
+
+document.write(
+document.domain
+eval\(
+unescape(
+fromCharCode(
+window\.name
+
